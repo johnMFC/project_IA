@@ -25,9 +25,9 @@
                 <p>Pergunte sobre estrátegias,build e dicas para seus jogos!</p>
 
                 <form>
-                    <input type="password" name="password" id="password" placeholder="Informe a API KEI do Gemini">
+                    <input id="apiKey" type="password" name="password" id="password" placeholder="Informe a API KEI do Gemini">
 
-                    <select>
+                    <select id="gameSelected">
                         <option value="">Selecione um jogo</option>
                         <option value="valorant">Valorant</option>
                         <option value="lol">League of Legends<option>
@@ -36,7 +36,7 @@
                     </select>
                     <input type="text" placeholder="Ex: Melhor build para ADC..." required>
 
-                    <button>Peguntar</button>
+                    <button id="askButton">Peguntar</button>
                 </form>
 
                 <div class="aiResponse">
@@ -47,6 +47,7 @@
             </div>
         </section>
     </main>
+   <script src="/script.js"></script>
 </body>
 
 </html>
